@@ -1,4 +1,3 @@
-/* GENEL AYARLAR */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #fff;
   line-height: 1.6;
 }
-/* HEADER */
 header {
   background: #0f0f0f;
   padding: 20px 100px;
@@ -42,7 +40,6 @@ nav a:hover {
   text-shadow: 0 0 10px #810ad0;
 }
 
-/* BÖLÜMLER */
 .about-section {
   text-align: center;
   padding: 80px 20px;
@@ -167,7 +164,7 @@ nav a:hover {
     transform: translateY(0);
   }
 }
-/* PROJE GRIDİ */
+
 .work-grid {
   display: flex;
   justify-content: center;
@@ -249,7 +246,6 @@ video, img {
   }
 }
 
-/* İletişim Linkleri */
 .contact-links {
   display: flex;
   flex-direction: column;
@@ -274,7 +270,6 @@ video, img {
   box-shadow: 0 0 20px rgba(179, 102, 255, 0.5);
 }
 
-/* FOOTER */
 footer {
   background: #111;
   text-align: center;
@@ -283,7 +278,6 @@ footer {
   color: #aaa;
 }
 
-/* MOBİL UYUMLU */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -314,3 +308,4 @@ section {
     transform: translateY(0);
   }
 }
+
