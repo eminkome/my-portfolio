@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emin Köme | Motion Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <h1>Emin Köme Portföy</h1>
+    <nav>
+      <a href="#about">Hakkımda</a>
+      <a href="#projects">Projeler</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+  </header>
+
+ <section id="about" class="about-section">
+  <h2 class="section-title">Hakkımda</h2>
+  <p class="about-short">
+    Ben Emin. Motion designer olarak 3D, animasyon ve görsel etki odaklı işler üretiyorum.
+  </p>
+
+  <div id="more-text" class="about-more">
+    <p>
+      Dört yılı aşkın süredir Adobe After Effects kullanıyorum.
+      Dinamik, dikkat çekici ve viral potansiyele sahip içerikler tasarlamayı seviyorum.
+     Her projede tasarım, hareket ve ritmi bir araya getirerek izleyicide etki bırakmayı hedefliyorum.
+     Estetik kadar enerjiye de önem veririm,yaptığım her işte bu dengeyi hissettirmeye çalışırım.
+     Burada gördükleriniz sadece buz dağının görünmeyen kısmı.
+     *Projelerde kullanılan bütün presetler bana ait.
+    </p>
+  </div>
+  <button id="toggle-btn" class="toggle-btn">Daha Fazla Göster</button>
+</section>
+
+<script>
+  const btn = document.getElementById('toggle-btn');
+  const moreText = document.getElementById('more-text');
+  let isOpen = false;
+
+  btn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    moreText.classList.toggle('show');
+    btn.textContent = isOpen ? "Daha Az Göster" : "Daha Fazla Göster";
+  });
+</script>
+
+ <section id="projects" class="section-style">
+  <h2 class="section-title">Projelerim</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <video controls src="assets/Edit1.mp4"></video>
+      <p>Viral Edit</p>
+    </div>
+    <div class="project-card">
+      <video controls src="assets/edit3.mp4"></video>
+      <p>Logo Animasyon</p>
+    </div>
+    <div class="project-card">
+      <video controls src="assets/edit2.mp4"></video>
+      <p>3D Outro</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-style">
+  <h2 class="section-title">İletişim</h2>
+  <div class="contact-links">
+    <a href="mailto:komeemin@gmail.com" class="contact-link">📩 komeemin@gmail.com</a>
+    <a href="https://www.linkedin.com/in/emin-k-81275b397/" target="_blank" class="contact-link">🔗 LinkedIn Profilim</a>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Emin Köme | Developer & Motion Designer</p>
+  </footer>
+
+</body>
+</html>
